@@ -1,0 +1,119 @@
+good@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.home{
+    background: linear-gradient(to top, rgba(0,0,0,.5)50%, rgba(0,0,0,rgba(0,0,0,.5)100%), url(../images/home.jpg) no-repeat);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+header .logo{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+header .logo span{
+    color: #ec9f69;
+}
+header .menubtn{
+    cursor: pointer;
+    margin-right: 15px;
+    display: none;
+}
+header .menubtn img{
+    filter:invert(1)
+}
+header .navbar a{
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 15px;
+    position: relative;
+}
+header .navbar a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background: #ec9f69;
+    transition: .2s linear;
+}
+header .navbar a:hover::before{
+   width: 100%;
+}
+.btn{
+    padding: 10px 15px;
+    background: #ec9f69;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.home .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.home .wrapper h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.home .wrapper p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.buttons{
+    margin-top: 1rem;
+}
+.btn2{
+    padding: 8px 15px;
+    color: #ec9f68;
+    border: 2px solid #fff;
+}
+.status{
+    padding: 0 20px;
+    position: absolute;
+    left: 0;right: 0;
+    bottom: -50px;
+}
+.status .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1.5rem;
+}
+.status .box-container .box{
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+.status .box-container .box h2{
+    font-size: 3rem;
+    color: #202022;
+}
+.status .box-container .box p{
+    padding: 10px 0;
+    font-size: 1rem;
+}
